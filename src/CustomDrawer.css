@@ -1,0 +1,53 @@
+/* Drawer.css */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .drawer.open {
+    transform: translateX(0);
+  }
+  
+  .drawer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .drawer-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .drawer-content label {
+    margin-bottom: 10px;
+  }
+  
+  .drawer-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .drawer-content button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .drawer-content button:last-child {
+    background-color: #6c757d;
+  }  

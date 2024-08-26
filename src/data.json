@@ -1,0 +1,78 @@
+{
+    "categories": [
+      {
+        "id": "cspm_dashboard",
+        "name": "CSPM Executive Dashboard",
+        "widgets": [
+          {
+            "id": "cloud_accounts",
+            "name": "Cloud Accounts",
+            "type": "pie",
+            "data": {
+              "labels": ["Connected", "Not Connected"],
+              "values": [2, 2],
+              "colors": ["#8884d8", "#d0d0d0"]
+            },
+            "total": "4 Total"
+          },
+          {
+            "id": "cloud_account_risk",
+            "name": "Cloud Account Risk Assessment",
+            "type": "pie",
+            "data": {
+              "labels": ["Failed", "Warning", "Not available", "Passed"],
+              "values": [1689, 681, 36, 7253],
+              "colors": ["#FF0000", "#FFA500", "#C0C0C0", "#008000"]
+            },
+            "total": "9659 Total"
+          }
+        ]
+      },
+      {
+        "id": "cwpp_dashboard",
+        "name": "CWPP Dashboard",
+        "widgets": [
+          {
+            "id": "namespace_alerts",
+            "name": "Top 5 Namespace Specific Alerts",
+            "type": "text",
+            "text": "No Graph data available!"
+          },
+          {
+            "id": "workload_alerts",
+            "name": "Workload Alerts",
+            "type": "text",
+            "text": "No Graph data available!"
+          }
+        ]
+      },
+      {
+        "id": "registry_scan",
+        "name": "Registry Scan",
+        "widgets": [
+          {
+            "id": "image_risk",
+            "name": "Image Risk Assessment",
+            "type": "bar",
+            "data": {
+              "labels": ["Critical", "High", "Medium", "Low"],
+              "values": [9, 150, 431, 880],
+              "colors": ["#FF0000", "#FFA500", "#FFFF00", "#008000"]
+            },
+            "total": "1470 Total Vulnerabilities"
+          },
+          {
+            "id": "image_security",
+            "name": "Image Security Issues",
+            "type": "bar",
+            "data": {
+              "labels": ["Critical", "High", "Medium", "Low"],
+              "values": [2, 2, 4, 2],
+              "colors": ["#FF0000", "#FFA500", "#FFFF00", "#008000"]
+            },
+            "total": "2 Total Images"
+          }
+        ]
+      }
+    ]
+  }  
